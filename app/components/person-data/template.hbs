@@ -1,0 +1,18 @@
+<div class="form-group col-sm-5">
+  {{input type="text" class="form-control" placeholder="First Name" value=person.firstName}}
+</div>
+<div class="form-group col-sm-5">
+  {{input type="text" class="form-control" placeholder="Last Name" value=person.lastName}}
+</div>
+<div class="form-group col-sm-5">
+  {{bootstrap-datepicker value=person.dob}}
+</div>
+<div class="form-group col-sm-5">
+  {{input type="text" class="form-control" placeholder="Zip Code" value=person.zipcode}}
+</div>
+<div class="form-group col-sm-5">
+  {{input type="text" class="form-control" placeholder="State" value=person.state}}
+</div>
+<div class="form-group col-sm-2">
+  <button class="btn btn-success" {{action actions.updatePerson person}}>Update</button>
+</div>
